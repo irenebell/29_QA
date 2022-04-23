@@ -94,8 +94,8 @@ checkAge3("2");
 
 //4***********************************************************
 
-let input = prompt("Enter your age");
-let userAge = Number(input);
+let input = +prompt("enter your age");
+let userage = number(input);
 
 const checkAge4 = function(age) {
   let age_2 = 18;
