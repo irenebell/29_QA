@@ -1,14 +1,20 @@
 //1
-for (let i = 1; i <= 10; i++) {
-  console.log(2 ** i);
+let result = 1
+for (let i = 0; i < 10; i++) {
+  result = result * 2 
+  console.log(result);  
 }
 
 //1*
+let po = 1
 function power(n) {
-  return 2 ** n;
+  for (let i = 0; i < 10; i++) {
+    po = po * 2 
+    console.log(po);  
+  }
 }
 
-console.log(power(10))
+power(10)
 
 //2
 let str = ":)";
@@ -30,20 +36,26 @@ printSmile(":)", 5)
 
 //3**
 
-function getWordStructure(word) { 
+function getWordStructure(wordd) { 
     let vowel = 0; 
-    let consonant = 0; 
-  for (let i = 0; i < word.length; i++) {    
-    if (word[i] == 'a' || word[i] =='o' || word[i] =='e' || word[i] =='i' || word[i] == 'u' || word[i] == 'y') {
-      vowel = vowel + 1;
-    } else {
-      consonant = consonant + 1;
+    let consonant = 0;  
+    let word = []
+    for (let i = 0; i < wordd.length; i++) {
+    if (wordd[i].match(/[a-z]/i)) {
+      word.push(wordd[i])
+    } else {continue}    
     }  
-  } 
-  console.log(`Word ${word} consists of ${vowel} vowels and ${consonant} consonants`)  
+  for (let i = 0; i < word.length; i++) {       
+        if (word[i] == 'a' || word[i] =='o' || word[i] =='e' || word[i] =='i' || word[i] == 'u' || word[i] == 'y') {
+          vowel = vowel + 1;
+        } else {
+          consonant = consonant + 1;
+        }         
+  }
+  console.log(`Word ${wordd} consists of ${vowel} vowels and ${consonant} consonants`)  
 }
 
-getWordStructure("dhyehannneoiyt")
+getWordStructure("dhyeh-annDneoiyt")
 
 //4**
 
@@ -59,3 +71,5 @@ word_new = word.split("").reverse().join("");
 
 
 isPalindrom("addedda")
+
+
