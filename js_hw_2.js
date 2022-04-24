@@ -8,7 +8,7 @@ for (let i = 0; i < 10; i++) {
 //1*
 let po = 1
 function power(n) {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < n; i++) {
     po = po * 2 
     console.log(po);  
   }
@@ -57,7 +57,7 @@ function getWordStructure(wordd) {
 
 getWordStructure("dhyeh-annDneoiyt")
 
-//4**
+//4** 
 
 function isPalindrom(word) {
 word = word.toLowerCase();
