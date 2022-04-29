@@ -60,7 +60,8 @@ getWordStructure("dhyeh-annDneoiyt")
 //4** 
 
 function isPalindrom(word) {
-word = word.toLowerCase();
+
+word = word.toLowerCase().replace(/\s+/g, '')
 word_new = word.split("").reverse().join("");
   if (word == word_new) {
     console.log("Palindrom")
@@ -70,6 +71,6 @@ word_new = word.split("").reverse().join("");
 }
 
 
-isPalindrom("addedda")
+isPalindrom("А роза упала на лапу Азора")
 
 
